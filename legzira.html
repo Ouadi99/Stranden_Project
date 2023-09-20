@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl_">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranden van Marokko</title>
+    <link rel="shortcut icon" href="assets/logo2.png">
+    <link rel="reset" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lealet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <!--Leaflet JS-->
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="js/legzira.js" defer></script>
+</head>
+<body>
+    <nav>
+        <form action="#" method="GET">
+            <input type="search" name="searchTerm" id="YO_searchInput" placeholder="Zoek...">
+        </form>
+        <img src="assets/logo2.png" alt="logo">
+        <h1>Stranden van Marokko</h1>
+        <a href="index.html">Home</a>
+        <div class="YO_nav-dropdown">
+            <button class="YO_nav-dropbtn">
+                <a href="trip.html">Trip</a>
+            </button>
+            <div class="YO_nav-dropdown-content">
+                <a href="quemado.html">Quemado Beach</a>
+                <a href="charrana.html">Charrana Beach</a>
+                <a href="legzira.html">Legzira</a>
+                <a href="taghazout.html">Taghazout</a>
+                <a href="dalia.html">Dalia Beach</a>
+                <a href="dragon.html">Dragon Beach</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <header>
+        <h2 id="YO_detail-h2">Legzira</h2>
+    </header>
+    <main>
+        <section id="YO_detail">      
+            <section class="YO_detail-left">
+                <figure>
+                    <img src="assets/Legzira.jpg">
+                    <figcaption><a href="https://1001beach.com/nl/africa/morocco/legzira">Bron: 1001beach.com</a></figcaption>
+                </figure>
+                <span class="likebtn-wrapper" data-theme="github" data-ef_voting="heartbeat" data-identifier="like_knop" data-dislike_enabled="false" data-counter_frmt="space" data-counter_zero_show="true" data-counter_count="true"></span>
+                <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+                <p>Legzira Beach staat bekend onder toeristen om zijn schoonheid. Het staat zelfs in de lijst van een de mooiste stranden op de wereld, als dat je aandacht niet heeft getrokken dan weet ik het ook niet. Zijn unieke schoonheid komt door de rode klei-zandbogen die rechtstreeks naar de oceaan gaan. Deze strand is ook afgelegen wat betekent dat dit de ultieme plek is om rust te vinden. Er was een review die deze plek beschreef met de volgende zin: “Het is alsof je op een andere planeet bent.” Dus als je rust zoekt of even weg wilt dan moet dit in jouw lijst staan.</p>
+                <form id="YO_comment" action="#" method="GET">
+                    <div id="YO_login">
+                        <label for="username">Username</label>
+                        <input type="text" name="username">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email">
+                    </div>
+                    <textarea readonly name="comment-section"  cols="100%" rows="10">User01: Voorbeeld commentaar</textarea><br>
+                    <input type="text">
+                    <button type="submit">Verzenden</button>
+                </form>  
+            </section>
+            <section class="YO_detail-right">
+                <div id="YO_legzira"></div>
+                <ul><strong>Kenmerken:</strong> 
+                    <li>Natuurlijke schoonheid</li>
+                    <li>Kristalhelder water</li>
+                    <li>Rode zandbogen</li>
+                    <li>Afgelegen</li>
+                    <li>Rustgevend</li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bezoekers</th>
+                            <th>winter</th>
+                            <th>lente</th>
+                            <th>zomer</th>
+                            <th>herfst</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Weinig</th>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <th>Matig</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Veel</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>             
+        </section>
+    </main>
+    <footer>
+        <p>Copyrighted by @Yassine Ouadi</p>
+    </footer>
+</body>
+</html>

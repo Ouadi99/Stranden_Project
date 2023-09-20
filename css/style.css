@@ -1,0 +1,262 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+img {
+  border-radius: 15px;
+}
+h1,
+h2,
+h3 {
+  color: #177fbf;
+  text-align: left;
+  font-size: xx-large;  
+}
+h1 {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+  font-family: cursive;
+  font-size: larger;
+}
+h2 {
+  text-align: left;
+  font-size: xx-large;
+}
+.YO_detail-h2,#YO_contact-h2,#YO_index-h2,#YO_trip-h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "header header"
+    "main main"
+    "footer footer";
+}
+#YO_searchInput {
+  border-radius: 15px;
+  margin-right: 1%;
+  border-color: #177fbf;
+  color: #d9a711;
+  border-width: 3px;
+}
+nav form {
+  text-align: right;
+}
+nav {
+  text-align: center;
+  margin-bottom: 10px;
+  grid-area: nav;
+}
+nav a {
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: solid;
+  background-color: #177fbf;
+  color: white;
+  border-color: black;
+  border-radius: 25px;
+}
+.YO_nav-dropdown:hover .YO_nav-dropdown-content {
+  display: block;
+}
+
+.YO_nav-dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.YO_nav-dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.YO_nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.YO_nav-dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #ffffff;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  margin-top: 2%;
+}
+footer {
+  grid-area: footer;
+  background-color: #177fbf;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+.YO_item-left {
+  width: 66%;
+  text-align: justify;
+}
+.YO_item-right {
+  width: 30%;
+}
+#YO_portfolio {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 90%;
+  gap: 30px;
+  margin-bottom: 3%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+.YO_portfolio-item {
+  flex: 1 1 350px;
+  margin: 0 0.5rem 0.5rem 0;
+}
+.YO_portfolio-item img {
+  width: 100%;
+  height: 70%;
+}
+#YO_detail figure {
+  margin: 0%;
+}
+#YO_detail p {
+  width: 100%;
+}
+#YO_detail,
+.YO_container {
+  display: flex;
+  margin: 0 auto;
+  column-gap: 2rem;
+  width: 90%;
+  padding: 2rem;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+.YO_item-right img,
+.YO_detail-left img,
+.YO_detail-right img,
+.YO_detail-left textarea,
+.YO_detail-left input {
+  width: 100%;
+  height: auto;
+}
+.YO_item-right figure,
+.YO_detail-right img {
+  margin: 0;
+}
+.YO_detail-left {
+  width: 40%;
+}
+.YO_detail-right {
+  width: 46%;
+}
+.YO_item img,
+.YO_detail img {
+  min-width: 100%;
+  max-height: 100%;
+}
+#YO_contact-main {
+  margin: 5%;
+  padding: 2%;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-bottom: 1%;
+  padding-bottom: 0%;
+}
+#YO_contact-form {
+  background-color: #d9a711;
+  padding: 10px;
+  border-radius: 15px;
+}
+fieldset {
+  background-color: #177fbf;
+  border-style: solid;
+  border-radius: 15px;
+  color: #ffffff;
+}
+#YO_quemado_beach,
+#YO_charrana_beach,
+#YO_legzira,
+#YO_taghazout,
+#YO_dalia_beach,
+#YO_dragon_beach {
+  height: 20rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 96%;
+}
+li {
+  background-color: #177fbf;
+  padding: 10px;
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 5px;
+}
+ul {
+  background-color: #d9a711;
+  width: 90%;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  border: 2px solid black;
+  color: #ffffff;
+}
+#YO_login {
+  width: 50%;
+  padding-bottom: 2%;
+}
+table {
+  border: 2px solid black;
+  width: 97%;
+  height: 20%;
+  border-radius: 15px;
+  background-color: #d9a711;
+  text-align: center;
+  color: #ffffff;
+}
+table thead th {
+  font-size: large;
+}
+td {
+  background-color: #177fbf;
+  font-size: large;
+}
+table tfoot tr td:last-child {
+  border-bottom-right-radius: 15px;
+}
+tfoot,
+tbody {
+  height: 25%;
+}
+table thead th,
+tbody th {
+  border-bottom: 2px solid black;
+}
+table tbody th,
+tfoot th,
+thead th {
+  border-right: 2px solid black;
+}
+table thead th:last-child {
+  border-right: none;
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .YO_item-left,
+  .YO_item-right,
+  .YO_detail-left,
+  .YO_detail-right {
+    width: 100%;
+  }
+}
